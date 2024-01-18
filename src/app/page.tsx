@@ -9,11 +9,11 @@ export default async function Home() {
 
   return (
     <div>
-      <form action={actions.singIn}>
+      <form action={actions.signIn}>
         <Button type="submit"> Sign In!</Button>
       </form>
 
-      <form action={actions.singOut}>
+      <form action={actions.signOut}>
         <Button type="submit"> Sign Out!</Button>
       </form>
 
