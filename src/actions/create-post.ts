@@ -34,6 +34,14 @@ export async function createPost(
       errors: result.error.flatten().fieldErrors,
     };
   }
+  const session = await auth();
+  if (!session || !session.user) {
+    return {
+      errors: {
+        _form: ["You must be signed in todo this"],
+      },
+    };
+  }
   return {
     errors: {},
   };
