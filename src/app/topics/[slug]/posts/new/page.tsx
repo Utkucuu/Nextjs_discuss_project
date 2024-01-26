@@ -1,3 +1,3 @@
-export default function postCretePage() {
+export default function PostCretePage() {
   return <div>Post Create Page</div>;
 }
